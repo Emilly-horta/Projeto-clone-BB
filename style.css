@@ -1,23 +1,108 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.menu .menu-desktop{
-    background-color: #FCFC30;
-    display: flex;
-    list-style: none;
+.body-content {
+  background-color: #f4f4f6;
+}
+
+.menu .menu-desktop {
+  background-color: #fcfc30;
+  display: flex;
+  list-style: none;
 }
 
 ul {
-    display: flex;
-    list-style: none;
-    margin-left: 0 auto;
-    margin-right: 0 auto;
+  display: flex;
+  list-style: none;
+  margin-left: 0 auto;
+  margin-right: 0 auto;
 }
 
-li{
-    font-family: 'Inter', sans-serif;
-    color: #465EFF;
+li {
+  font-family: "Inter", sans-serif;
+  color: #465eff;
+}
+
+.img-hero img {
+  width: 100%;
+}
+
+.qr-code img {
+  width: 15%;
+  position: relative;
+  bottom: 36rem;
+  left: 6.5rem;
+  display: flex;
+  margin-bottom: 0 auto;
+}
+
+.title_img-hero {
+  position: relative;
+  bottom: 40rem;
+  width: 30%;
+  padding-left: 6rem;
+  font-family: "Inter", sans-serif;
+  color: #465eff;
+  font-size: 4rem;
+}
+
+.subtitle_img-hero {
+  position: relative;
+  bottom: 38rem;
+  padding-left: 6rem;
+  margin: 0.5rem;
+  font-family: "Inter", sans-serif;
+  color: #465eff;
+  font-size: 1.5rem;
+}
+
+.beneficios-wrap h1 {
+  font-family: "Inter", sans-serif;
+  color: #465eff;
+  font-weight: 400;
+  font-size: 3rem;
+  width: 50%;
+  position: relative;
+  bottom: 10rem;
+  left: 5rem;
+  background-color: #f4f4f6;
+}
+
+.linha {
+  position: absolute;
+  width: 171.5px;
+  margin-top: 10rem;
+  margin-right: 3rem;
+  height: 0px;
+  left: 82px;
+  top: 907px;
+  border: 1px solid #465eff;
+}
+
+.beneficios-abertura {
+  display: flex;
+  position: relative;
+  margin-left: 5rem;
+}
+
+.abertura-container{
+    top: 2rem;
+
+}
+
+.abertura-container h1 {
+  font-family: "Inter", sans-serif;
+  color: #465eff;
+  font-weight: 500;
+}
+
+.abertura-container p{
+    font-family: "Inter", sans-serif;
+    color: #767A86;
+    width: 45%;
+    position: relative;
+    top: 1rem;
 }
