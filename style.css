@@ -88,9 +88,12 @@ li {
   margin-left: 5rem;
 }
 
-.abertura-container{
-    top: 2rem;
+.container-box-1 {
+  top: 2rem;
+}
 
+.container-box-1 p {
+  width: 50%;
 }
 
 .abertura-container h1 {
@@ -99,10 +102,61 @@ li {
   font-weight: 500;
 }
 
-.abertura-container p{
-    font-family: "Inter", sans-serif;
-    color: #767A86;
-    width: 45%;
-    position: relative;
-    top: 1rem;
+.abertura-container p {
+  font-family: "Inter", sans-serif;
+  color: #767a86;
+  width: 45%;
+  position: relative;
+  top: 1rem;
 }
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.container-box-3 {
+  position: relative;
+  top: 2rem;
+}
+
+.container-box-3 p {
+  width: 50%;
+}
+
+.abertura-wrap-1 img {
+  width: 40%;
+}
+
+.servicos-wrap {
+  display: flex;
+  position: relative;
+  margin-left: 5rem;
+}
+
+.segurança-wrap {
+  display: flex;
+  position: relative;
+  margin-left: 5rem;
+}
+
+.conveniencia-wrap {
+  display: flex;
+  position: relative;
+  margin-left: 5rem;
+}
+
+.wrap-container-1 {
+  width: 50%;
+}
+
+.container-box-2 {
+  position: relative;
+  right: 8rem;
+}
+
+.container-box-4 p {
+    width: 50%;
+  }
