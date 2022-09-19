@@ -334,4 +334,21 @@ li {
   .outer-wrap {
     height: 50%;
   }
+
+  .box-wrap{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 6rem;
+  }
+
+  .wrap-container-2{
+    display: flex;
+    margin: 4rem;
+  }
+}
+
+.box-bloco1 img{
+  border-radius: 22px;
 }
