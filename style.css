@@ -363,12 +363,24 @@ li {
     right: 2rem;
   }
 
-  .facilidade-wrap{
+  .facilidade-wrap {
     display: flex;
     margin: 4rem;
   }
 
-  .boxes{
+  .boxes {
+    background-color: #ffffff;
+    width: 20%;
+    height: 20%;
+  }
+
+  .boxe-1 {
+    background-color: #ffffff;
+    width: 20%;
+    height: 20%;
+  }
+
+  .boxe-6 {
     background-color: #ffffff;
     width: 20%;
     height: 20%;
@@ -459,4 +471,81 @@ li {
 
 .container-investimento h1 {
   font-family: "Inter", sans-serif;
+}
+
+.boxes img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.boxes p {
+  font-family: "Inter", sans-serif;
+  color: #465eff;
+  font-weight: 600;
+  text-align: center;
+}
+
+.boxe-1 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 88px;
+}
+
+.boxe-1 p {
+  font-family: "Inter", sans-serif;
+  color: #465eff;
+  font-weight: 600;
+  text-align: center;
+}
+
+.boxe-6 img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 88px;
+}
+
+.boxe-6 p {
+  font-family: "Inter", sans-serif;
+  color: #465eff;
+  font-weight: 600;
+  text-align: center;
+}
+
+.facilidades h1 {
+  font-family: "Inter", sans-serif;
+  color: #465eff;
+  font-weight: 600;
+  margin: 2rem;
+  position: relative;
+  left: 2rem;
+}
+
+.banner img {
+  border-radius: 10px;
+  width: 84%;
+  position: relative;
+  left: 6.5rem;
+}
+
+.column1-footer{
+  display: flex;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.column2-footer{
+  display: flex;
+  background: rgba(255, 255, 255, 0.7);
+}
+
+.column1-footer p{
+  font-family: "Inter", sans-serif;
+  color: #465eff;
+}
+
+.column2-footer p{
+  font-family: "Inter", sans-serif;
+  color: #465eff;
 }
