@@ -387,6 +387,24 @@ li {
   }
 }
 
+.wrap-momentos{
+  margin: 2rem;
+  position: relative;
+  padding-left: 3rem;
+}
+
+.wrap-momentos h1{
+  font-weight: 600;
+  font-family: "Inter", sans-serif;
+}
+
+.wrap-momentos p{
+  position: relative;
+  top:1rem;
+  font-family: "Inter", sans-serif;
+  color: #767A86;
+}
+
 .box-bloco1 img {
   border-radius: 22px;
   right: 2rem;
@@ -523,6 +541,10 @@ li {
   left: 2rem;
 }
 
+.banner{
+  padding: 2rem;
+}
+
 .banner img {
   border-radius: 10px;
   width: 84%;
@@ -530,22 +552,59 @@ li {
   left: 6.5rem;
 }
 
-.column1-footer{
-  display: flex;
+.footer{
   background: rgba(255, 255, 255, 0.7);
 }
 
-.column2-footer{
+.column1-footer {
   display: flex;
   background: rgba(255, 255, 255, 0.7);
+  width: 48%;
 }
 
-.column1-footer p{
+.column2-footer {
+  display: flex;
+  background: rgba(255, 255, 255, 0.7);
+  width: 64%;
+}
+
+.column1-footer p {
   font-family: "Inter", sans-serif;
+  margin: 2rem;
   color: #465eff;
 }
 
-.column2-footer p{
+.column2-footer p {
   font-family: "Inter", sans-serif;
   color: #465eff;
+  margin: 2rem;
+}
+
+.column3-footer-p {
+  font-family: "Inter", sans-serif;
+  color: #465eff;
+  width: 38%;
+  position: relative;
+  top: 2rem;
+  left: 2rem;
+}
+.column3-footer {
+  background-color: #fcfc30;
+  height: 16%;
+  
+}
+
+.outer-column {
+  display: flex;
+  margin: 2rem;
+  padding-left: 33rem;
+  position: relative;
+  bottom: 2rem;
+}
+
+.outer-column p {
+  font-family: "Inter", sans-serif;
+  color: #465eff;
+  margin: 1rem;
+  font-weight: 800;
 }
