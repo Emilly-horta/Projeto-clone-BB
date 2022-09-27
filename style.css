@@ -12,6 +12,9 @@
   background-color: #fcfc30;
   display: flex;
   list-style: none;
+  width: 100%;
+  z-index: 2;
+  position: fixed;
 }
 
 ul {
@@ -89,11 +92,54 @@ li {
 }
 
 .container-box-1 {
+  position: relative;
+  left: 3.5rem;
   top: 2rem;
 }
 
 .container-box-1 p {
   width: 50%;
+  font-family: "Inter", sans-serif;
+  color: #767a86;
+}
+
+.container-box-2 p {
+  font-family: "Inter", sans-serif;
+  color: #767a86;
+}
+
+.container-box-3 p {
+  font-family: "Inter", sans-serif;
+  color: #767a86;
+}
+
+.container-box-4 p {
+  font-family: "Inter", sans-serif;
+  color: #767a86;
+}
+
+.container-box-1 h1 {
+  font-family: "Inter", sans-serif;
+  color: #465eff;
+  font-weight: 600;
+}
+
+.container-box-2 h1 {
+  font-family: "Inter", sans-serif;
+  color: #465eff;
+  font-weight: 600;
+}
+
+.container-box-3 h1 {
+  font-family: "Inter", sans-serif;
+  color: #465eff;
+  font-weight: 600;
+}
+
+.container-box-4 h1 {
+  font-family: "Inter", sans-serif;
+  color: #465eff;
+  font-weight: 600;
 }
 
 .abertura-container h1 {
@@ -113,6 +159,8 @@ li {
 .container {
   display: flex;
   flex-direction: row;
+  position: relative;
+  padding-left: 4rem;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -120,32 +168,62 @@ li {
 .container-box-3 {
   position: relative;
   top: 2rem;
+  left: 2.5rem;
+}
+
+.container-box-4 {
+  position: relative;
+  right: 1rem;
 }
 
 .container-box-3 p {
   width: 50%;
 }
 
+.abertura-wrap img {
+  position: relative;
+  left: 2rem;
+  top: 2rem;
+  height: 90%;
+}
+
 .abertura-wrap-1 img {
-  width: 40%;
+  width: 30%;
+  position: relative;
+  left: 3rem;
+}
+
+.abertura-wrap-2 {
+  position: relative;
+  left: 2.5rem;
+  top: 1.5rem;
+  width: 25%;
+}
+
+.abertura-wrap-2 img {
+  width: 80%;
+}
+
+.abertura-wrap-3 img {
+  width: 70%;
 }
 
 .servicos-wrap {
   display: flex;
   position: relative;
-  margin-left: 5rem;
 }
 
 .segurança-wrap {
   display: flex;
   position: relative;
+  top: 2rem;
   margin-left: 5rem;
 }
 
 .conveniencia-wrap {
   display: flex;
   position: relative;
-  margin-left: 5rem;
+  top: 3.5rem;
 }
 
 .wrap-container-1 {
@@ -154,7 +232,7 @@ li {
 
 .container-box-2 {
   position: relative;
-  right: 8rem;
+  right: 9rem;
 }
 
 .container-box-4 p {
@@ -163,6 +241,8 @@ li {
 
 .wrap-box {
   display: grid;
+  position: relative;
+  top: 7rem;
 }
 
 .wrap-box .wrap-box-column1 {
@@ -215,7 +295,6 @@ li {
     width: 205%;
     position: relative;
     left: 5rem;
-    background-color: #ffffff;
     bottom: 11rem;
     margin: 4rem;
   }
@@ -258,16 +337,18 @@ li {
     display: grid;
     grid-template-columns: 215px 215px 215px;
     position: relative;
+    bottom: 5rem;
   }
 
   .image-wrap-1 img {
     border-radius: 10px;
-    width: 116%;
-    height: 213%;
+    width: 132%;
+    height: 171%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
 
   .image-wrap-1 {
-    width: 116%;
+    width: 118%;
     height: 30%;
     position: relative;
     left: 4rem;
@@ -277,27 +358,26 @@ li {
 
   .image-wrap-2 img {
     border-radius: 10px;
-    width: 100%;
-    height: 160%;
+    width: 95%;
+    height: 128%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
 
   .image-wrap-2 {
-    width: 41.5%;
+    width: 42.5%;
     position: relative;
-    left: 15rem;
+    left: 20rem;
     margin: 5rem;
   }
 
   .image-wrap-3 img {
     border-radius: 10px;
-    width: 100%;
-    height: 55%;
+    width: 75%;
+    height: 52%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
 
   .image-wrap-3 {
-    width: 147%;
-    position: relative;
-    background-color: #ffffff;
     border-radius: 10px;
     top: -2rem;
     margin: -2rem;
@@ -305,22 +385,24 @@ li {
 
   .image-wrap-4 img {
     border-radius: 10px;
-    width: 100%;
+    height: 130%;
+    width: 88%;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   }
 
   .image-wrap-4 {
-    width: 130%;
-    height: 40%;
     position: relative;
-    left: 6rem;
+    left: 8rem;
     top: -8rem;
     margin: 4rem;
   }
 
-  .image-wrap-5 img {
+  .wrap-- img {
     border-radius: 10px;
-    width: 134%;
-    height: 110%;
+    width: 130%;
+    height: 105%;
+    position: relative;
+    left: 5rem;
   }
 
   .image-wrap-5 {
@@ -361,11 +443,21 @@ li {
     width: 100%;
     height: 60%;
     border-radius: 10px;
+    -moz-transition: all 0.3s;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
   }
 
   .box-bloco2 {
     position: relative;
     right: 2rem;
+    overflow: hidden;
+  }
+
+  .box-bloco2:hover img {
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
   }
 
   .facilidade-wrap {
@@ -377,25 +469,31 @@ li {
     background-color: #ffffff;
     width: 20%;
     height: 20%;
+    margin: 0.5rem;
+    border-radius: 5px;
   }
 
   .boxe-1 {
     background-color: #ffffff;
     width: 20%;
     height: 20%;
+    margin: 0.5rem;
+    border-radius: 5px;
   }
 
   .boxe-6 {
     background-color: #ffffff;
     width: 20%;
     height: 20%;
+    margin: 0.5rem;
+    border-radius: 5px;
   }
 }
 
 .wrap-momentos {
-  margin: 2rem;
   position: relative;
-  padding-left: 3rem;
+  padding-left: 5rem;
+  bottom: 3rem;
 }
 
 .wrap-momentos h1 {
@@ -410,24 +508,47 @@ li {
   color: #767a86;
 }
 
+.box-bloco1{
+  overflow: hidden;
+}
+
 .box-bloco1 img {
   border-radius: 22px;
   right: 2rem;
   position: relative;
   height: 82%;
   width: 98%;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.box-bloco1:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .box-bloco3 {
   border-radius: 10px;
   position: relative;
   right: 2rem;
+  overflow: hidden;
 }
 
 .box-bloco3 img {
   height: 82%;
   width: 100%;
   border-radius: 10px;
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.box-bloco3:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 
 .seguro-veiculo {
@@ -611,4 +732,182 @@ li {
   color: #465eff;
   margin: 1rem;
   font-weight: 800;
+}
+
+.emprestimo {
+  background: #ffffff;
+  position: relative;
+  border-radius: 5px;
+  width: 154%;
+  left: 3rem;
+  height: 32%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.emprestimo h1 {
+  font-family: "Inter", sans-serif;
+  color: #465eff;
+  font-size: 1.37rem;
+}
+
+.emprestimo p {
+  font-family: "Inter", sans-serif;
+  color: #767a86;
+}
+
+.emprestimo button {
+  background-color: #465eff;
+  color: #fcfc30;
+  border: none;
+  padding: 1rem;
+  position: relative;
+  font-weight: 800;
+  top: 1rem;
+  border-radius: 5px;
+}
+
+.conta-corrente {
+  position: relative;
+  left: 8rem;
+  bottom: 7rem;
+  border-radius: 5px;
+  padding-left: 3rem;
+}
+
+.cartao-credito {
+  position: relative;
+}
+
+.cartao-wrap {
+  width: 26%;
+  position: relative;
+  left: 26rem;
+  bottom: 12rem;
+}
+
+.cartao-wrap h1 {
+  font-family: "Inter", sans-serif;
+  color: #465eff;
+  position: relative;
+  font-weight: 700;
+  bottom: 3rem;
+}
+
+.cartao-wrap p {
+  font-family: "Inter", sans-serif;
+  color: #fff;
+  position: relative;
+  width: 60%;
+  bottom: 2rem;
+}
+
+.cartao-wrap .link-adquira {
+  font-family: "Inter", sans-serif;
+  color: #465eff;
+  font-weight: 600;
+  position: relative;
+  top: 0.1rem;
+}
+
+.investimento {
+  background: #ffffff;
+  position: relative;
+  border-radius: 5px;
+  width: 157%;
+  left: 12rem;
+  height: 33%;
+  bottom: 8.6rem;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.investimento h1 {
+  font-family: "Inter", sans-serif;
+  color: #465eff;
+  font-size: 1.37rem;
+}
+
+.investimento p {
+  font-family: "Inter", sans-serif;
+  color: #767a86;
+}
+
+.investimento button {
+  background-color: #465eff;
+  color: #fcfc30;
+  border: none;
+  padding: 1rem;
+  position: relative;
+  font-weight: 800;
+  top: 1rem;
+  border-radius: 5px;
+}
+
+.lojabb {
+  background: #ffffff;
+  position: relative;
+  border-radius: 5px;
+  width: 167%;
+  left: 48.3rem;
+  height: 119%;
+  bottom: 19.5rem;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.lojabb h1 {
+  font-family: "Inter", sans-serif;
+  color: #465eff;
+  font-size: 1.37rem;
+}
+
+.lojabb p {
+  font-family: "Inter", sans-serif;
+  color: #767a86;
+}
+
+.lojabb button {
+  background-color: #465eff;
+  color: #fcfc30;
+  border: none;
+  padding: 1rem;
+  position: relative;
+  font-weight: 800;
+  top: 1rem;
+  border-radius: 5px;
+}
+
+.image-wrap-5 span {
+  background: #fff;
+  height: 99%;
+}
+
+.wrap-wrap-momentos {
+  background-color: #f4f4f6;
+}
+
+.conta-corrente h1 {
+  font-family: "Inter", sans-serif;
+  color: #fcfc30;
+  font-weight: 800;
+  position: relative;
+  bottom: 1rem;
+}
+
+.conta-corrente p {
+  font-family: "Inter", sans-serif;
+  color: #fff;
+}
+
+.conta-corrente button {
+  background-color: #fcfc30;
+  color: #465eff;
+  border: none;
+  padding: 1rem;
+  position: relative;
+  font-weight: 800;
+  top: 1rem;
+  border-radius: 5px;
+}
+
+.box-- {
+  padding: 1rem;
 }
