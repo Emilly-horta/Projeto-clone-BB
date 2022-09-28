@@ -17,7 +17,7 @@
   position: fixed;
 }
 
-.menu-desktop img{
+.menu-desktop img {
   width: 28px;
   height: 24px;
   position: relative;
@@ -35,11 +35,11 @@ li {
   font-family: "Inter", sans-serif;
   color: #465eff;
   margin: 1rem;
-  position : relative;
+  position: relative;
   top: 0.3rem;
 }
 
-.acesse-conta{
+.acesse-conta {
   position: relative;
   left: 30rem;
   font-weight: 600;
@@ -479,6 +479,9 @@ li {
   .facilidade-wrap {
     display: flex;
     margin: 4rem;
+    left: 0.5rem;
+    position: relative;
+    bottom: 3rem;
   }
 
   .boxes {
@@ -524,7 +527,7 @@ li {
   color: #767a86;
 }
 
-.box-bloco1{
+.box-bloco1 {
   overflow: hidden;
   border-radius: 10px;
 }
@@ -580,7 +583,8 @@ li {
 }
 
 .linha-wrap {
-  border: 1px solid #000000;
+  border: 1px solid #767a86;
+  border-radius: 5px;
   top: 1rem;
   position: relative;
   width: 130%;
@@ -679,13 +683,15 @@ li {
   font-family: "Inter", sans-serif;
   color: #465eff;
   font-weight: 600;
-  margin: 2rem;
+  margin: 3rem;
   position: relative;
   left: 2rem;
 }
 
 .banner {
   padding: 2rem;
+  position: relative;
+  bottom: 4rem;
 }
 
 .banner img {
