@@ -1,7 +1,7 @@
 {
-  "name": "clone-bb",
+  "name": "projeto-estudo",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -11,10 +11,15 @@
   "dependencies": {
     "next": "13.1.4",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "sass": "^1.57.1"
   },
   "devDependencies": {
-    "eslint": "8.32.0",
+    "eslint": "^8.32.0",
     "eslint-config-next": "13.1.4"
-  }
+  },
+  "description": "projeto iniciado com finalidade de aprimorar meus conhecimentos em next e em css",
+  "main": "index.js",
+  "author": "Emilly <millyphb@gmail.com>",
+  "license": "MIT"
 }
