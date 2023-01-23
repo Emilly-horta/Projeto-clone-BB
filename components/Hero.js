@@ -3,7 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Hero.module.scss";
 
 export default function Hero() {
-  return (
+  return ( 
     <section className={styles.container} id="hero">
       <Image
         className={styles.heroBackground}

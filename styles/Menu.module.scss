@@ -1,0 +1,68 @@
+@use "./config/colors.scss";
+@import "../styles/commons";
+
+.container {
+  display: none;
+  background-color: colors.$yellow;
+
+  @include breakpoint("small") {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    position: absolute;
+    z-index: 2;
+  }
+
+  .logo {
+    z-index: 15;
+    align-items: center;
+    display: flex;
+    transition: transform 0.15s ease-out;
+    padding: 1em;
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}
+
+.menu {
+  z-index: 15;
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  margin: 1em 2em;
+
+  li a {
+    color: colors.$blue;
+    font-family: "Inter";
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      transform: scaleX(0);
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #ffffff;
+      transform-origin: bottom right;
+      transition: transform 0.25s ease-out;
+    }
+    &:hover:after {
+      transform: scaleX(1);
+      transform-origin: bottom left;
+    }
+    &:hover {
+      transform: scale(1.08);
+    }
+  }
+
+  .conta a {
+    color: colors.$blue;
+    font-family: "Inter";
+    font-weight: 600;
+  }
+}
