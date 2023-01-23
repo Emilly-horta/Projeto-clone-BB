@@ -1,0 +1,56 @@
+$font: var(--bungee-font);
+$font2: var(--Inter-font);
+
+$breakpoints: (
+  "mobile": 450px,
+  "small": 768px,
+  "medium": 960px,
+  "big": 1200px,
+  "larger": 1920px,
+) !default;
+
+@mixin breakpoint($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) {
+      @content;
+    }
+  } @else {
+    @warn 'Unfortunately, no value could be retrieved from `#{$breakpoint}`. '
+      + 'Available breakpoints are: #{map-keys($breakpoints)}.';
+  }
+}
+
+@mixin transition($length) {
+  transition: all $length cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@mixin title() {
+  font-size: 24px;
+
+  @include breakpoint("medium") {
+    font-size: 28px;
+  }
+
+  @include breakpoint("big") {
+    font-size: 34px;
+  }
+}
+
+@mixin subtitle() {
+  font-size: 20px;
+
+  @include breakpoint("medium") {
+    font-size: 24px;
+  }
+
+  @include breakpoint("big") {
+    font-size: 28px;
+  }
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("../pages/Inter-Regular.ttf");
+  font-weight: 400;
+  font-style: normal;
+}

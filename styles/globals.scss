@@ -1,0 +1,29 @@
+@import "config/colors";
+@import "commons";
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: var(--montserrat-font), -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  font-family: $font2;
+  box-sizing: border-box;
+  color: $accent-color-dark;
+}
+
+ul,
+li,
+ol,
+dl {
+  list-style: none;
+  padding: 0;
+}

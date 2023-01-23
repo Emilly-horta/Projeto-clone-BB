@@ -1,0 +1,87 @@
+@use "config/colors";
+@import "../styles/commons";
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  max-height: 100vh;
+  position: relative;
+}
+
+
+.wrap {
+  z-index: 5;
+  max-width: 80vw;
+  margin: 0 auto;
+
+  @include breakpoint("medium") {
+    margin: 0 0 0 5vw;
+  }
+}
+
+.title {
+  color: colors.$blue;
+  margin: 0;
+  line-height: 1.15;
+  font-size: 2rem;
+  font-family: "Inter";
+  font-weight: 400;
+  font-style: normal;
+
+  @include breakpoint("small") {
+    font-size: 4rem;
+  }
+}
+
+.goals {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8em;
+  font-size: 1.2em;
+  font-weight: 500;
+  max-width: 41ch;
+  font-family: $font2;
+  list-style: none;
+  color: colors.$white;
+
+  .subtitle {
+    font-size: 1rem;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    @include breakpoint("small") {
+      font-size: 1.5rem;
+    }
+  }
+
+  .paragraph {
+    position: relative;
+    font-size: 0.8rem;
+
+    @include breakpoint("small") {
+      font-size: 1rem;
+    }
+  }
+
+}
+
+.goals li {
+  color: black;
+  text-align: start;
+  font-family: "Inter";
+  color: colors.$white;
+}
+
+.heroBackground {
+  z-index: 0;
+  margin: 0 !important;
+
+}
+
+.heroContainer * {
+  min-width: 100vw;
+  min-height: 500px;
+}
