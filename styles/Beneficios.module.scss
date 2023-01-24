@@ -1,0 +1,55 @@
+@use "config/colors";
+@import "../styles/commons";
+
+.container {
+  .title {
+    color: colors.$blue;
+    margin: 0;
+    line-height: 1.15;
+    font-size: 1rem;
+    font-family: "Inter";
+    font-weight: 500;
+    font-style: normal;
+
+    @include breakpoint("small") {
+      font-size: 2rem;
+      margin: 2em 15%;
+      width: 40%;
+    }
+  }
+
+  .box {
+    width: 50%;
+  }
+
+  .images {
+    margin: 2em 0 0 2em;
+  }
+
+  .beneficioslista {
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: row wrap;
+    align-items: stretch;
+    gap: 2em;
+    margin: 3em 12%;
+    padding: 1em;
+  }
+
+  .beneficioitens {
+    display: flex;
+    gap: 3em;
+    width: 45%;
+
+    h1 {
+      font-family: "Inter";
+      color: colors.$blue;
+      font-weight: 400;
+    }
+
+    p {
+      color: colors.$gray;
+      font-family: "Inter";
+    }
+  }
+}
