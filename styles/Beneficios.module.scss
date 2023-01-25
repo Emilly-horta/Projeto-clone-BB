@@ -2,6 +2,7 @@
 @import "../styles/commons";
 
 .container {
+  background-color: #f4f4f6;
   .title {
     color: colors.$blue;
     margin: 0;
@@ -12,9 +13,9 @@
     font-style: normal;
 
     @include breakpoint("small") {
-      font-size: 2rem;
+      font-size: 3rem;
       margin: 2em 15%;
-      width: 40%;
+      width: 51%;
     }
   }
 
@@ -44,7 +45,7 @@
     h1 {
       font-family: "Inter";
       color: colors.$blue;
-      font-weight: 400;
+      font-weight: 800;
     }
 
     p {

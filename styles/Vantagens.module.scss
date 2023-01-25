@@ -1,0 +1,130 @@
+@use "config/colors";
+@import "../styles/commons";
+
+.container {
+  background-color: #f4f4f6;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .wrap {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding: 2em;
+  }
+
+  .img {
+    border-radius: 10px;
+    z-index: 1;
+  }
+
+  .imagesconta {
+    width: 50.6vw;
+    height: 48vh;
+    margin: 0 1%;
+    position: relative;
+    top: 1.2em;
+    right: 0.3em;
+    background-color: colors.$blue;
+    border-radius: 10px;
+
+    @include breakpoint("small") {
+      flex: 1 1 175px;
+    }
+  }
+
+  .box1 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+
+  .box2 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+
+  .texto {
+    background-image: url(https://cdn.bb.com.br/wp-content/uploads/2022/09/ContaBB-min.jpg);
+    width: 44vw;
+    height: 48vh;
+    padding: 3em 3%;
+    background-repeat: no-repeat;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+
+    h1 {
+      position: absolute;
+      color: colors.$yellow;
+      font-family: "Inter";
+    }
+
+    ul li {
+      position: absolute;
+      color: colors.$white;
+      font-family: "Inter";
+      margin: 3em 0%;
+    }
+  }
+
+  .img {
+    display: block;
+    max-width: 100%;
+  }
+
+  .images {
+    flex: 1 1 175px;
+    margin: 10px;
+  }
+
+  .imagescartão {
+    flex: 1 1 175px;
+  }
+
+  .information {
+    background-color: colors.$white;
+    width: 24vw;
+    border-radius: 10px;
+    padding: 1em;
+
+    h1 {
+      color: colors.$blue;
+      font-family: "Inter";
+    }
+
+    p {
+      color: colors.$gray;
+      font-family: $font2;
+      font-weight: 100;
+    }
+  }
+
+  .texto2 {
+    background-image: url(https://cdn.bb.com.br/wp-content/uploads/2022/09/Card-Banner-Cartao-de-credito-DT-min-1.jpg);
+    width: 25vw;
+    height: 48vh;
+    background-repeat: no-repeat;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 20px;
+
+    h1 {
+      position: absolute;
+      color: colors.$blue;
+      font-family: "Inter";
+      margin: 2em;
+      width: 10vw;
+    }
+
+    ul li {
+      position: absolute;
+      color: colors.$white;
+      font-family: "Inter";
+      margin: 8em 4%;
+      width: 10vw;
+    }
+  }
+}
