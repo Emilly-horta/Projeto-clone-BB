@@ -1,0 +1,60 @@
+@use "./config/colors.scss";
+@import "../styles/commons";
+
+.container {
+  background-color: #f4f4f6;
+}
+
+.wrap {
+  margin: 3em;
+}
+
+.item ul {
+  display: flex;
+  gap: 2em;
+  margin: 4em 7%;
+  position: relative;
+  li {
+    border-bottom: 0.2em solid;
+    padding: 0.5em;
+  }
+}
+
+.img1 {
+  background-image: url(https://cdn.bb.com.br/wp-content/uploads/2022/09/card_momentos_e_solucoes-home_voce-openfinance_01.04_Mobile-imagem_01-min.jpg);
+  background-repeat: no-repeat;
+  height: 59vh;
+  margin: 1em;
+  width: 20vw;
+  border-radius: 10px;
+}
+
+.img2 {
+  background-image: url(https://cdn.bb.com.br/wp-content/uploads/2022/09/bloco2-min-1.jpg);
+  background-repeat: no-repeat;
+  margin: 1em;
+  border-radius: 10px;
+}
+
+.img3 {
+  background-image: url(https://cdn.bb.com.br/wp-content/uploads/2022/09/bloco1-min.jpg);
+  background-repeat: no-repeat;
+  width: 40vw;
+  margin: 1em;
+  padding: 1em;
+  border-radius: 10px;
+}
+
+.img4 {
+  background-image: url(https://cdn.bb.com.br/wp-content/uploads/2022/03/slide3.png);
+  background-repeat: no-repeat;
+  margin: 13rem 0;
+  padding: 0.5em;
+  border-radius: 10px;
+}
+
+.opcoes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
