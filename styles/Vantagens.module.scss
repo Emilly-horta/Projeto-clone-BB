@@ -55,6 +55,7 @@
     -webkit-border-radius: 50px;
     -moz-border-radius: 50px;
     border-radius: 50px;
+    background-size: 100%;
 
     h1 {
       position: absolute;
@@ -104,11 +105,10 @@
 
   .texto2 {
     background-image: url(https://cdn.bb.com.br/wp-content/uploads/2022/09/Card-Banner-Cartao-de-credito-DT-min-1.jpg);
-    width: 25vw;
+    width: 32vw;
     height: 48vh;
     background-repeat: no-repeat;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
+    background-size: 100%;
     border-radius: 20px;
 
     h1 {

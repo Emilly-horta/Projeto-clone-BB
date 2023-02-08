@@ -1,0 +1,49 @@
+@use "./config/colors.scss";
+@import "../styles/commons";
+
+.container {
+  background-color: #f4f4f6;
+
+  h1 {
+    font-family: "Inter";
+    color: colors.$blue;
+    font-weight: 800;
+    margin: 2em 5%;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    gap: 3em;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.conteudo {
+  background-color: white;
+  width: 10vw;
+  border-radius: 8px;
+}
+
+.conteudo p {
+  text-align: center;
+  font-family: "Inter";
+  color: colors.$blue;
+  font-weight: 800;
+}
+
+.conteudo img {
+  display: block;
+  margin: 5px auto;
+  max-width: 100%;
+}
+
+.card {
+  img {
+    max-width: 100%;
+    display: block;
+    margin: 60px auto;
+    border-radius: 10px;
+  }
+}

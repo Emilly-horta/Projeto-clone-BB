@@ -27,13 +27,12 @@ export default function Beneficios() {
             <ul>
               <li>Aumente suas chances de ter mais limite aqui no BB</li>
             </ul>
+            <p>Compartilhe seus dados</p>
           </div>
 
           <div className={styles.img2}>
-            <h1>Minhas Finanças</h1>
-            <ul>
-              <li>Aproveite as vantagens de ter um Ourocard</li>
-            </ul>
+            <h1 className={styles.financas}>Minhas Finanças</h1>
+            <h3>No aplicativo do BB você organiza todas as suas contas</h3>
             <ul className={styles.img4}>
               <h1>Seguro de veículos</h1>
               <li>Praticidade e conforto onde e quando quiser</li>
@@ -45,6 +44,7 @@ export default function Beneficios() {
             <ul>
               <li>Quer saber quanto seu dinheiro pode render no BB?</li>
             </ul>
+            <p>Descubra Agora</p>
           </div>
         </div>
       </div>

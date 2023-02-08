@@ -61,7 +61,7 @@ export default function Vantagens() {
             <Image
               src="/src/assets/images/img-93.jpg"
               alt="abertura digital"
-              width={325}
+              width={425}
               height={250}
               className={styles.img}
             />

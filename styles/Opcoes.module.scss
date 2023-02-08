@@ -5,6 +5,28 @@
   background-color: #f4f4f6;
 }
 
+.box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  .opcoes {
+    flex-flow: row wrap;
+
+    @include breakpoint("big") {
+      display: flex;
+      justify-content: center;
+      font-family: "Inter";
+      padding: 1%;
+    }
+
+    p {
+      color: colors.$blue;
+      font-family: $font2;
+      font-weight: 700;
+    }
+  }
+}
+
 .wrap {
   margin: 3em;
 }
@@ -14,25 +36,33 @@
   gap: 2em;
   margin: 4em 7%;
   position: relative;
+  flex-wrap: wrap;
   li {
     border-bottom: 0.2em solid;
     padding: 0.5em;
+    font-family: $font2;
   }
 }
 
 .img1 {
   background-image: url(https://cdn.bb.com.br/wp-content/uploads/2022/09/card_momentos_e_solucoes-home_voce-openfinance_01.04_Mobile-imagem_01-min.jpg);
   background-repeat: no-repeat;
-  height: 59vh;
   margin: 1em;
-  width: 20vw;
+  width: 23vw;
   border-radius: 10px;
+  height: 70vh;
+  padding: 1rem;
+  padding-top: 15rem;
+  height: 63vh;
+  background-size: 100%;
 }
 
 .img2 {
   background-image: url(https://cdn.bb.com.br/wp-content/uploads/2022/09/bloco2-min-1.jpg);
   background-repeat: no-repeat;
   margin: 1em;
+  width: 27%;
+  background-size: 100%;
   border-radius: 10px;
 }
 
@@ -43,18 +73,47 @@
   margin: 1em;
   padding: 1em;
   border-radius: 10px;
+  background-size: 100%;
+  padding: 1rem;
+  padding-top: 15rem;
 }
 
 .img4 {
   background-image: url(https://cdn.bb.com.br/wp-content/uploads/2022/03/slide3.png);
   background-repeat: no-repeat;
-  margin: 13rem 0;
   padding: 0.5em;
   border-radius: 10px;
+  height: 15vh;
+  background-size: 100%;
+  margin: 15rem 0 2px 2px;
+
+  h1 {
+    color: #f4f4f6;
+    position: relative;
+    bottom: 1rem;
+  }
+
+  li {
+    color: #f4f4f6;
+    position: relative;
+    bottom: 2rem;
+  }
 }
 
-.opcoes {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+.img2 {
+  .financas {
+    position: relative;
+    top: 10rem;
+    padding: 0.3rem;
+    margin: 1px 2%;
+  }
+
+  h3 {
+    position: relative;
+    top: 10rem;
+    width: 17vw;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1px 4%;
+  }
 }

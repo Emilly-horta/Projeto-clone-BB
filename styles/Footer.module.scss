@@ -1,0 +1,71 @@
+@use "./config/colors.scss";
+@import "../styles/commons";
+
+.row {
+  .content1 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin: 2em 5%;
+    p {
+      font-family: "Inter";
+      width: 19vw;
+      color: colors.$blue;
+    }
+
+    span {
+      font-family: "Inter";
+      color: colors.$blue;
+      font-weight: 800;
+    }
+  }
+
+  .content2 {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    margin: 2em 5%;
+    p {
+      font-family: "Inter";
+      width: 19vw;
+      color: colors.$blue;
+    }
+    span {
+      font-family: "Inter";
+      color: colors.$blue;
+      font-weight: 800;
+    }
+  }
+}
+
+.rowSecond {
+  background-color: colors.$yellow;
+  display: flex;
+
+  .content2 {
+    width: 35vw;
+    margin: 1em 5%;
+    p {
+      font-family: "Inter";
+      width: 32vw;
+      color: colors.$blue;
+    }
+    @include breakpoint("small") {
+      flex-wrap: wrap;
+    }
+  }
+
+  .content3 .infos {
+    flex-wrap: wrap;
+
+    p {
+      font-family: "Inter";
+      width: 10vw;
+      color: colors.$blue;
+    }
+
+    @include breakpoint("small") {
+      display: flex;
+    }
+  }
+}
