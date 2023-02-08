@@ -58,10 +58,17 @@
   .content3 .infos {
     flex-wrap: wrap;
 
+    .icons{
+      display: flex;
+      position: relative;
+      top: 2em;
+    }
+
     p {
       font-family: "Inter";
-      width: 10vw;
+      width: 8vw;
       color: colors.$blue;
+      font-size: 0.7rem;
     }
 
     @include breakpoint("small") {

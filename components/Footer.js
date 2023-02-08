@@ -1,7 +1,6 @@
 import styles from "../styles/Footer.module.scss";
 import Image from "next/image";
 
-
 export default function Footer() {
   return (
     <section id="footer">
@@ -42,32 +41,57 @@ export default function Footer() {
 
         <div className={styles.content3}>
           <div className={styles.infos}>
-            <div>
+            <div className={styles.icons}>
               {" "}
-              <Image></Image>
+              <Image
+                src="/src/assets/icons-footer/mapa.png"
+                width={28}
+                height={28}
+                alt="mapa do site"
+              />
               <p>Mapa do site </p>
             </div>
-            <div>
+            <div className={styles.icons}>
               {" "}
-              <Image></Image>
+              <Image
+                src="/src/assets/icons-footer/seguranca.png"
+                width={28}
+                height={28}
+                alt="seguranca"
+              />
               <p>Segurança</p>
             </div>
 
-            <div>
+            <div className={styles.icons}>
               {" "}
-              <Image></Image>
+              <Image
+                src="/src/assets/icons-footer/etica.png"
+                width={30}
+                height={30}
+                alt="etica e integridade"
+              />
               <p>Etica e integridade</p>
             </div>
 
-            <div>
+            <div className={styles.icons}>
               {" "}
-              <Image></Image>
+              <Image
+                src="/src/assets/icons-footer/privacidade.png"
+                width={30}
+                height={30}
+                alt="privacidade"
+              />
               <p>Minha privacidade </p>
             </div>
 
-            <div>
+            <div className={styles.icons}>
               {" "}
-              <Image></Image>
+              <Image
+                src="/src/assets/icons-footer/transparencia.png"
+                width={30}
+                height={30}
+                alt="transparencia"
+              />
               <p>Transparencia</p>
             </div>
           </div>
