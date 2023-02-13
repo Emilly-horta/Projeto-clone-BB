@@ -10,6 +10,10 @@
     flex-flow: row wrap;
     justify-content: center;
     padding: 2em;
+
+    @include breakpoint("small") {
+      flex: 1 1 175px;
+    }
   }
 
   .img {
@@ -30,6 +34,11 @@
     @include breakpoint("small") {
       flex: 1 1 175px;
     }
+
+    @include breakpoint("larger") {
+      width: 45.6vw;
+      height: 0;
+    }
   }
 
   .box1 {
@@ -44,6 +53,9 @@
     flex-direction: row;
     flex-wrap: wrap;
     max-width: 100%;
+
+    @include breakpoint("larger") {
+    }
   }
 
   .texto {
@@ -69,11 +81,25 @@
       font-family: "Inter";
       margin: 3em 0%;
     }
+
+    @include breakpoint("larger") {
+      width: 44vw;
+      height: 39vh;
+      position: relative;
+      bottom: 1em;
+    }
   }
 
   .img {
-    display: block;
-    max-width: 100%;
+    width: 24vw;
+    @include breakpoint("larger") {
+      display: block;
+      max-width: 100%;
+    }
+
+    @include breakpoint("small") {
+      width: 27vw;
+    }
   }
 
   .images {
@@ -91,6 +117,10 @@
     border-radius: 10px;
     padding: 1em;
 
+    @include breakpoint("small") {
+      width: 27vw;
+    }
+
     h1 {
       color: colors.$blue;
       font-family: "Inter";
@@ -103,13 +133,25 @@
     }
   }
 
+  .imagescartao {
+    @include breakpoint("larger") {
+      position: relative;
+      bottom: 0.8em;
+    }
+  }
+
   .texto2 {
     background-image: url(https://cdn.bb.com.br/wp-content/uploads/2022/09/Card-Banner-Cartao-de-credito-DT-min-1.jpg);
-    width: 32vw;
-    height: 48vh;
+    width: 29vw;
+    height: 39vh;
     background-repeat: no-repeat;
     background-size: 100%;
     border-radius: 20px;
+
+    @include breakpoint("small") {
+      width: 34vw;
+      height: 48vh;
+    }
 
     h1 {
       position: absolute;

@@ -1,25 +1,149 @@
-@use "config/colors";
+@use "./config/colors.scss";
 @import "../styles/commons";
 
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  min-height: 100vh;
-  max-height: 100vh;
-  position: relative;
+@keyframes tonext {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: 100%;
+  }
+  98% {
+    left: 100%;
+  }
+  99% {
+    left: 0;
+  }
 }
 
+@keyframes tostart {
+  75% {
+    left: 0;
+  }
+  95% {
+    left: -300%;
+  }
+  98% {
+    left: -300%;
+  }
+  99% {
+    left: 0;
+  }
+}
+
+@keyframes snap {
+  96% {
+    scroll-snap-align: center;
+  }
+  97% {
+    scroll-snap-align: none;
+  }
+  99% {
+    scroll-snap-align: none;
+  }
+  100% {
+    scroll-snap-align: center;
+  }
+}
+
+.carousel {
+  position: relative;
+  padding-top: 75%;
+  filter: drop-shadow(0 0 10px #0003);
+  perspective: 100px;
+  width: 100vw;
+  height: 100vh;
+
+  ol,
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+.carousel__viewport {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  overflow-x: scroll;
+  counter-reset: item;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+}
+
+.carousel__slide {
+  position: relative;
+  flex: 0 0 100%;
+  width: 100%;
+  background-image: url("../public/src/assets/images/bb-sustentavel.jpg");
+  background-size: cover;
+}
+
+.carousel__slide:nth-child(even) {
+  background-image: url("../public/src/assets/images/banner2-slide.jpg");
+  background-size: cover;
+}
+
+.carousel__slide:before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -40%, 70px);
+  background-image: url("../public/src/assets/images/img-hero.jpg");
+  background-size: cover;
+  font-size: 2em;
+}
+
+.carousel__snapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  scroll-snap-align: center;
+}
+
+@media (hover: hover) {
+  .carousel__snapper {
+    animation-name: tonext, snap;
+    animation-timing-function: ease;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+
+  .carousel__slide:last-child .carousel__snapper {
+    animation-name: tostart, snap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .carousel__snapper {
+    animation-name: none;
+  }
+}
+
+.carousel:hover .carousel__snapper,
+.carousel:focus-within .carousel__snapper {
+  animation-name: none;
+}
 
 .wrap {
-  z-index: 5;
   max-width: 80vw;
   margin: 0 auto;
+  position: relative;
 
   @include breakpoint("medium") {
-    margin: 0 0 0 5vw;
+    margin: 0 21em 0 5vw;
   }
+}
+
+.heroCode {
+  position: absolute;
+  margin: 0;
 }
 
 .title {
@@ -31,6 +155,7 @@
   font-weight: 800;
   width: 20vw;
   font-style: normal;
+  margin: 2em 2%;
 
   @include breakpoint("small") {
     font-size: 4rem;
@@ -67,7 +192,6 @@
       font-size: 1rem;
     }
   }
-
 }
 
 .goals li {
@@ -75,15 +199,4 @@
   text-align: start;
   font-family: "Inter";
   color: colors.$white;
-}
-
-.heroBackground {
-  z-index: 0;
-  margin: 0 !important;
-
-}
-
-.heroContainer * {
-  min-width: 100vw;
-  min-height: 500px;
 }

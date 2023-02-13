@@ -5,13 +5,12 @@ import styles from "../styles/Beneficios.module.scss";
 export default function Beneficios() {
   return (
     <section className={styles.container} id="Beneficios">
-      <div className={styles.wrap}>
-        <h1 className={styles.title}>
-          Vem ser cliente e aproveite os benefícios do BB
-        </h1>
-      </div>
-
       <div className={styles.beneficioslista}>
+        <div className={styles.wrap}>
+          <h1 className={styles.title}>
+            Vem ser cliente e aproveite os benefícios do BB
+          </h1>
+        </div>
         <div className={styles.beneficioitens}>
           <div className={styles.images}>
             <Image

@@ -9,6 +9,10 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+
+  @include breakpoint("larger") {
+    display: block;
+  }
   .opcoes {
     flex-flow: row wrap;
 
@@ -29,18 +33,41 @@
 
 .wrap {
   margin: 3em;
+
+  @include breakpoint("larger") {
+    margin: 2em 7%;
+  }
+
+  h1 {
+    font-family: "Inter";
+    font-weight: 500;
+  }
+
+  p {
+    color: colors.$gray;
+    font-family: "Inter";
+  }
 }
 
-.item ul {
-  display: flex;
-  gap: 2em;
-  margin: 4em 7%;
-  position: relative;
-  flex-wrap: wrap;
+.item {
+  @include breakpoint("larger") {
+    margin: 2em 14%;
+  }
+  ul {
+    display: flex;
+    gap: 2em;
+    margin: 4em 7%;
+    position: relative;
+    flex-wrap: wrap;
+  }
   li {
     border-bottom: 0.2em solid;
+    color: colors.$gray;
     padding: 0.5em;
     font-family: $font2;
+  }
+  li:hover{
+    color: colors.$blue;
   }
 }
 
@@ -55,6 +82,11 @@
   padding-top: 15rem;
   height: 63vh;
   background-size: 100%;
+
+  @include breakpoint("larger") {
+    padding-top: 28rem;
+    height: 61vh;
+  }
 }
 
 .img2 {
@@ -64,6 +96,15 @@
   width: 27%;
   background-size: 100%;
   border-radius: 10px;
+
+  .boxFinancas {
+    @include breakpoint("larger") {
+      position: relative;
+      top: 10rem;
+      padding: 0.3rem;
+      margin: 1px 2%;
+    }
+  }
 }
 
 .img3 {
@@ -75,7 +116,17 @@
   border-radius: 10px;
   background-size: 100%;
   padding: 1rem;
-  padding-top: 15rem;
+
+  .boxInvestimentos {
+    @include breakpoint("larger") {
+      position: relative;
+      top: 34%;
+    }
+
+    @include breakpoint("big") {
+      padding-top: 15rem;
+    }
+  }
 }
 
 .img4 {
@@ -86,6 +137,10 @@
   height: 15vh;
   background-size: 100%;
   margin: 15rem 0 2px 2px;
+
+  @include breakpoint("larger") {
+    margin: 23rem 0 2px 2px;
+  }
 
   h1 {
     color: #f4f4f6;
