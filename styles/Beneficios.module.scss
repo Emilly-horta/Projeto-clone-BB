@@ -4,24 +4,30 @@
 .container {
   background-color: #f4f4f6;
 
-  .wrap .title {
-    color: colors.$blue;
-    margin: 0;
-    line-height: 1.15;
-    font-size: 1rem;
-    font-family: "Inter";
-    font-weight: 500;
-    font-style: normal;
-
-    @include breakpoint("small") {
-      font-size: 3rem;
-      margin: 2em 4%;
-      width: 67%;
+  .wrap {
+    @include breakpoint("larger") {
+      padding-top: 18em;
     }
-  }
+    .title {
+      color: colors.$blue;
+      margin: 0;
+      line-height: 1.15;
+      font-size: 2rem;
+      font-family: "Inter";
+      font-weight: 500;
+      font-style: normal;
+      padding: 1em;
 
-  .box {
-    width: 50%;
+      @include breakpoint("small") {
+        font-size: 3rem;
+        margin: 2em 4%;
+      }
+
+      @include breakpoint("big") {
+        font-size: 2.8rem;
+        padding: 1em;
+      }
+    }
   }
 
   .images {
@@ -29,19 +35,28 @@
   }
 
   .beneficioslista {
-    display: flex;
-    flex-wrap: wrap;
-    flex-flow: row wrap;
-    align-items: stretch;
-    gap: 2em;
-    margin: 31em 14% 3px;
-    padding: 3em;
+    margin: 33em 14% 3px;
+
+    @include breakpoint("big") {
+      display: flex;
+      flex-wrap: wrap;
+      flex-flow: row wrap;
+      align-items: stretch;
+      gap: 2em;
+      padding: 3em;
+    }
   }
 
   .beneficioitens {
     display: flex;
     gap: 3em;
     width: 45%;
+    padding: 2em;
+
+    @include breakpoint("larger") {
+      position: relative;
+      top: 5em;
+    }
 
     h1 {
       font-family: "Inter";

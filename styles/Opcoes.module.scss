@@ -6,16 +6,20 @@
 }
 
 .box {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  margin: 2em 8%;
+  justify-content: center;
+
+  @include breakpoint("big") {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
 
   @include breakpoint("larger") {
     display: block;
   }
   .opcoes {
-    flex-flow: row wrap;
-
+    flex-wrap: row wrap;
     @include breakpoint("big") {
       display: flex;
       justify-content: center;
@@ -38,6 +42,10 @@
     margin: 2em 7%;
   }
 
+  @include breakpoint("big") {
+    margin: 2em 7%;
+  }
+
   h1 {
     font-family: "Inter";
     font-weight: 500;
@@ -54,19 +62,23 @@
     margin: 2em 14%;
   }
   ul {
-    display: flex;
-    gap: 2em;
-    margin: 4em 7%;
-    position: relative;
     flex-wrap: wrap;
+
+    @include breakpoint("big") {
+      display: flex;
+      gap: 2em;
+      margin: 4em 16%;
+      position: relative;
+    }
   }
   li {
     border-bottom: 0.2em solid;
     color: colors.$gray;
     padding: 0.5em;
     font-family: $font2;
+    font-size: 0.9rem;
   }
-  li:hover{
+  li:hover {
     color: colors.$blue;
   }
 }
@@ -75,17 +87,25 @@
   background-image: url(https://cdn.bb.com.br/wp-content/uploads/2022/09/card_momentos_e_solucoes-home_voce-openfinance_01.04_Mobile-imagem_01-min.jpg);
   background-repeat: no-repeat;
   margin: 1em;
-  width: 23vw;
-  border-radius: 10px;
-  height: 70vh;
-  padding: 1rem;
-  padding-top: 15rem;
-  height: 63vh;
-  background-size: 100%;
+  width: 56vw;
+  height: 66vh;
 
   @include breakpoint("larger") {
     padding-top: 28rem;
     height: 61vh;
+  }
+
+  @include breakpoint("big") {
+    background-image: url(https://cdn.bb.com.br/wp-content/uploads/2022/09/card_momentos_e_solucoes-home_voce-openfinance_01.04_Mobile-imagem_01-min.jpg);
+    background-repeat: no-repeat;
+    margin: 1em;
+    width: 23vw;
+    border-radius: 10px;
+    height: 70vh;
+    padding: 1rem;
+    padding-top: 14rem;
+    height: 63vh;
+    background-size: 100%;
   }
 }
 
@@ -93,9 +113,16 @@
   background-image: url(https://cdn.bb.com.br/wp-content/uploads/2022/09/bloco2-min-1.jpg);
   background-repeat: no-repeat;
   margin: 1em;
-  width: 27%;
-  background-size: 100%;
-  border-radius: 10px;
+  width: 66%;
+
+  @include breakpoint("big") {
+    background-image: url(https://cdn.bb.com.br/wp-content/uploads/2022/09/bloco2-min-1.jpg);
+    background-repeat: no-repeat;
+    margin: 1em;
+    width: 27%;
+    background-size: 114%;
+    border-radius: 10px;
+  }
 
   .boxFinancas {
     @include breakpoint("larger") {
@@ -110,12 +137,22 @@
 .img3 {
   background-image: url(https://cdn.bb.com.br/wp-content/uploads/2022/09/bloco1-min.jpg);
   background-repeat: no-repeat;
-  width: 40vw;
+  width: 54vw;
   margin: 1em;
   padding: 1em;
   border-radius: 10px;
   background-size: 100%;
-  padding: 1rem;
+
+  @include breakpoint("big") {
+    background-image: url(https://cdn.bb.com.br/wp-content/uploads/2022/09/bloco1-min.jpg);
+    background-repeat: no-repeat;
+    width: 40vw;
+    margin: 1em;
+    padding: 1em;
+    border-radius: 10px;
+    background-size: 100%;
+    padding: 1rem;
+  }
 
   .boxInvestimentos {
     @include breakpoint("larger") {
@@ -126,6 +163,10 @@
     @include breakpoint("big") {
       padding-top: 15rem;
     }
+  }
+
+  ul li {
+    width: 20vw;
   }
 }
 
@@ -142,6 +183,11 @@
     margin: 23rem 0 2px 2px;
   }
 
+  @include breakpoint("big") {
+    margin: 14rem 0 2px 2px;
+    height: 14vh;
+  }
+
   h1 {
     color: #f4f4f6;
     position: relative;
@@ -152,23 +198,32 @@
     color: #f4f4f6;
     position: relative;
     bottom: 2rem;
+    font-size: 0.8rem;
   }
 }
 
 .img2 {
   .financas {
-    position: relative;
     top: 10rem;
-    padding: 0.3rem;
-    margin: 1px 2%;
+
+    @include breakpoint("big") {
+      position: relative;
+      top: 8rem;
+      padding: 0.3rem;
+      margin: 1px 2%;
+    }
   }
 
   h3 {
-    position: relative;
-    top: 10rem;
-    width: 17vw;
-    font-size: 1rem;
-    font-weight: 400;
-    margin: 1px 4%;
+    top: 9rem;
+
+    @include breakpoint("big") {
+      position: relative;
+      top: 8rem;
+      width: 17vw;
+      font-size: 1rem;
+      font-weight: 400;
+      margin: 1px 4%;
+    }
   }
 }

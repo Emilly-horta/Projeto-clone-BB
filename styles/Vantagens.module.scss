@@ -12,7 +12,7 @@
     padding: 2em;
 
     @include breakpoint("small") {
-      flex: 1 1 175px;
+      padding: 2em 5%;
     }
   }
 
@@ -22,14 +22,7 @@
   }
 
   .imagesconta {
-    width: 50.6vw;
-    height: 48vh;
-    margin: 0 1%;
-    position: relative;
-    top: 1.2em;
-    right: 0.3em;
-    background-color: colors.$blue;
-    border-radius: 10px;
+    flex-wrap: wrap;
 
     @include breakpoint("small") {
       flex: 1 1 175px;
@@ -39,35 +32,57 @@
       width: 45.6vw;
       height: 0;
     }
+
+    @include breakpoint("big") {
+      width: 50.6vw;
+      height: 48vh;
+      margin: 0 1%;
+      position: relative;
+      top: 1.2em;
+      right: 0.3em;
+      background-color: colors.$blue;
+      border-radius: 10px;
+    }
   }
 
   .box1 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-width: 100%;
+    margin: 2em 16%;
+    flex-wrap: nowrap;
+    @include breakpoint("big") {
+      display: flex;
+      flex-direction: row;
+      max-width: 100%;
+    }
   }
 
   .box2 {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    max-width: 100%;
-
-    @include breakpoint("larger") {
+    margin: 2em 16%;
+    flex-wrap: nowrap;
+    @include breakpoint("big") {
+      display: flex;
+      flex-direction: row;
+      max-width: 100%;
     }
   }
 
   .texto {
     background-image: url(https://cdn.bb.com.br/wp-content/uploads/2022/09/ContaBB-min.jpg);
-    width: 44vw;
+    width: 65vw;
     height: 48vh;
     padding: 3em 3%;
     background-repeat: no-repeat;
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    border-radius: 50px;
     background-size: 100%;
+    @include breakpoint("big") {
+      background-image: url(https://cdn.bb.com.br/wp-content/uploads/2022/09/ContaBB-min.jpg);
+      width: 44vw;
+      height: 48vh;
+      padding: 3em 3%;
+      background-repeat: no-repeat;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      border-radius: 50px;
+      background-size: 100%;
+    }
 
     h1 {
       position: absolute;
@@ -91,7 +106,12 @@
   }
 
   .img {
-    width: 24vw;
+    width: 60vw;
+
+    @include breakpoint("big") {
+      width: 24vw;
+    }
+
     @include breakpoint("larger") {
       display: block;
       max-width: 100%;
@@ -103,8 +123,10 @@
   }
 
   .images {
-    flex: 1 1 175px;
-    margin: 10px;
+    @include breakpoint("big") {
+      flex: 1 1 175px;
+      margin: 10px;
+    }
   }
 
   .imagescartão {
@@ -112,11 +134,12 @@
   }
 
   .information {
-    background-color: colors.$white;
-    width: 24vw;
-    border-radius: 10px;
-    padding: 1em;
-
+    @include breakpoint("big") {
+      background-color: colors.$white;
+      width: 24vw;
+      border-radius: 10px;
+      padding: 1em;
+    }
     @include breakpoint("small") {
       width: 27vw;
     }
@@ -142,12 +165,19 @@
 
   .texto2 {
     background-image: url(https://cdn.bb.com.br/wp-content/uploads/2022/09/Card-Banner-Cartao-de-credito-DT-min-1.jpg);
-    width: 29vw;
+    width: 66vw;
     height: 39vh;
     background-repeat: no-repeat;
     background-size: 100%;
-    border-radius: 20px;
 
+    @include breakpoint("big") {
+      background-image: url(https://cdn.bb.com.br/wp-content/uploads/2022/09/Card-Banner-Cartao-de-credito-DT-min-1.jpg);
+      width: 29vw;
+      height: 39vh;
+      background-repeat: no-repeat;
+      background-size: 100%;
+      border-radius: 20px;
+    }
     @include breakpoint("small") {
       width: 34vw;
       height: 48vh;

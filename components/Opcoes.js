@@ -16,7 +16,6 @@ export default function Beneficios() {
           <li>CASA E FAMÍLIA</li>
           <li>SAÚDE E BEM-ESTAR</li>
           <li>LAZER E ENTRETENIMENTO</li>
-          <li>LAZER E ENTRETENIMENTO</li>
         </ul>
       </div>
 

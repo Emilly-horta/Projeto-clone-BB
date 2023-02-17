@@ -19,10 +19,7 @@
     align-items: center;
     display: flex;
     transition: transform 0.15s ease-out;
-    padding: 1em;
-    &:hover {
-      transform: scale(1.1);
-    }
+    padding: 0.5em;
   }
 }
 
@@ -49,7 +46,6 @@
       left: 0;
       background-color: #ffffff;
       transform-origin: bottom right;
-      transition: transform 0.25s ease-out;
     }
     &:hover:after {
       transform: scaleX(1);
